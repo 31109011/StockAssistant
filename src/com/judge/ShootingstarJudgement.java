@@ -37,7 +37,7 @@ public class ShootingstarJudgement extends IJudge {
 
     @Override
     public String judgeName() {
-        return stockCode+stockName+":流行线/倒锤子线";
+        return stockCode+stockName+":流星线/倒锤子线";
     }
 
     @Override

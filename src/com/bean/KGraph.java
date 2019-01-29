@@ -31,10 +31,11 @@ public class KGraph {
         InputStream in=null;
         ByteArrayOutputStream out=null;
         try {
+            //authorityType为复权数据，fb为不复权
             URL u=new URL("http://pdfm.eastmoney.com/EM_UBG_PDTI_Fast/api/js?" +
                     "token=4f1862fc3b5e77c150a2b985b12db0fd&rtntype=6&" +
                     "id="+sbi.getId()+sbi.getType()+"&type="+this.type+
-                    "&authorityType=fa&cb=jsonp1537100920536");
+                    "&authorityType=fb&cb=jsonp1537100920536");
             in=u.openStream();
             out=new ByteArrayOutputStream();
 

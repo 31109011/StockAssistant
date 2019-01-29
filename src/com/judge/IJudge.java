@@ -78,6 +78,10 @@ public abstract class IJudge {
             case 1:
                 String res=lst.get(length-1);
                 lstcandle.add(createCandle(res));
+            case 0://如果取0根蜡烛，则是获取所有蜡烛，这是为了计算MA，MACD等。
+                for(int i=0;i<lst.size();i++){
+                    lstcandle.add(createCandle(lst.get(i)));
+                }
                 break;
         }
     }
